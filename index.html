@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Executor</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #1e1e1e;
+            color: #c5c6c7;
+            font-family: Arial, sans-serif;
+        }
+
+        #editorContainer {
+            height: calc(100% - 50px);
+        }
+
+        #controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #555;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #777;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.21.2/min/vs/editor/editor.main.min.css">
+</head>
+<body>
+    <div id="controls">
+        <button id="executeButton">Execute</button>
+        <button id="clearButton">Clear</button>
+    </div>
+    <div id="editorContainer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.21.2/min/vs/loader.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
